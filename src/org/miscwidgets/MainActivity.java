@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 
-public class TestPanels extends Activity implements OnPanelListener {
+public class MainActivity extends Activity implements OnPanelListener {
 
 	private Panel bottomPanel;
 	private Panel topPanel;

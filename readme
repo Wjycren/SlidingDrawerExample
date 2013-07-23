@@ -1,4 +1,13 @@
+there are two branches:
 
-this is demo is from an opensource project : Android Misc Widgets
+1, master
+
+this is demo is from an opensource project : Android Misc Widgets (include SlidingDrawer, Breath Button, and etc)
 
 you can clone the origin code by svn : http://android-misc-widgets.googlecode.com/svn/trunk
+
+
+2, mike (only include the code and souces for SlidingDrawer) 
+
+
+
