@@ -10,7 +10,7 @@ you can clone the origin code by svn : http://android-misc-widgets.googlecode.co
 2, mike (only include the code and souces for SlidingDrawer) 
 
 
-Note: the origin code (SlidingDrawer)have two bugs:
+Note One: the origin code (SlidingDrawer--Version1)have two bugs:
 
       1, blink, either when the panel is closed or click the handle
       
@@ -19,8 +19,39 @@ Note: the origin code (SlidingDrawer)have two bugs:
       
 solution:
  
-         http://blog.csdn.net/lovehong0306/article/details/7451264
+         http://blog.csdn.net/lovehong0306/article/details/7451264 (Updated to Version2)
+         
       
+Note Two: the Version2 still have one bug:
+          
+      1, when use method panel.setOpen(true, true), the panel can not display animation, the user experence is very bad.
+      
+
+solution:
+
+        add separate animation for first opening panel. it's a workround solution. (Update to Version3)
+        
+        
+        
+------------------------"Animation"------------------------------
+
+Now the code is updated to Version3, there are two types of the "animation".
+
+1, stardard animation, when use method panel.setOpen(true, true), just run at the first time.
+
+2, onTouchEvent()
+       -----GestureDetector()
+                ------PanelOnGestureListener()
+                          ------onDown()
+                          ------onFling()----------invalidate();  
+                          ------onScroll()
+                                              
+                                        
+        
+
+           
+
+        
 
 
 
