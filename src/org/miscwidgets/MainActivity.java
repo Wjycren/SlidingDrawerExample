@@ -1,7 +1,5 @@
 package org.miscwidgets;
 
-import org.miscwidgets.interpolator.BounceInterpolator;
-import org.miscwidgets.interpolator.EasingType.Type;
 import org.miscwidgets.widget.Panel;
 import org.miscwidgets.widget.Panel.OnPanelListener;
 
@@ -24,24 +22,9 @@ public class MainActivity extends Activity implements OnPanelListener {
         
         topPanel = panel = (Panel) findViewById(R.id.topPanel);
         panel.setOnPanelListener(this);
-        panel.setInterpolator(new BounceInterpolator(Type.OUT));
+//        panel.setInterpolator(new BounceInterpolator(Type.OUT));
         panel.setOpen(true, true);
         
-//        panel = (Panel) findViewById(R.id.leftPanel1);
-//        panel.setOnPanelListener(this);
-//        panel.setInterpolator(new BackInterpolator(Type.OUT, 2));
-//
-//        panel = (Panel) findViewById(R.id.leftPanel2);
-//        panel.setOnPanelListener(this);
-//        panel.setInterpolator(new BackInterpolator(Type.OUT, 2));
-//
-//        panel = (Panel) findViewById(R.id.rightPanel);
-//        panel.setOnPanelListener(this);
-//        panel.setInterpolator(new ExpoInterpolator(Type.OUT));
-//
-//        bottomPanel = panel = (Panel) findViewById(R.id.bottomPanel);
-//        panel.setOnPanelListener(this);
-//        panel.setInterpolator(new ElasticInterpolator(Type.OUT, 1.0f, 0.3f));
     }
     
     @Override

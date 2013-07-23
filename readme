@@ -2,12 +2,28 @@ there are two branches:
 
 1, master
 
-this is demo is from an opensource project : Android Misc Widgets (include SlidingDrawer, Breath Button, and etc)
+this demo is from an opensource project : Android Misc Widgets (include SlidingDrawer, Breath Button, and etc)
 
 you can clone the origin code by svn : http://android-misc-widgets.googlecode.com/svn/trunk
 
 
 2, mike (only include the code and souces for SlidingDrawer) 
+
+
+Note: the origin code (SlidingDrawer)have two bugs:
+
+      1, blink, either when the panel is closed or click the handle
+      
+      2, when set <uses-sdk> in AndroidManifest.xml, when the panel is closed, click the handle, the handle will disappear.
+      
+      
+solution:
+ 
+         http://blog.csdn.net/lovehong0306/article/details/7451264
+      
+
+
+
 
 
 
