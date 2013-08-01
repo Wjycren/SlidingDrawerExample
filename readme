@@ -1,4 +1,4 @@
-there are two branches:
+there are two branches, see branch mike :
 
 1, master
 
@@ -22,7 +22,7 @@ solution:
          http://blog.csdn.net/lovehong0306/article/details/7451264 (Updated to Version2)
          
       
-Note Two: the Version2 still have one bug:
+Note Two: the Version2 still have two bug:
           
       1, when use method panel.setOpen(true, true), the panel can not display animation, the user experence is very bad.
       
@@ -30,6 +30,11 @@ Note Two: the Version2 still have one bug:
 solution:
 
         add separate animation for first opening panel. it's a workround solution. (Update to Version3)
+        
+        
+      2£¬ when touch handle up and down, the panel listener's state is wrong
+ 
+solution: see the commit change
         
         
         
