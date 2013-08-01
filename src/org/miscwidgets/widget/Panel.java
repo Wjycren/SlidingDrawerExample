@@ -625,6 +625,10 @@ public class Panel extends LinearLayout
   
             mVelocity = mOrientation == VERTICAL ? velocityY2 : velocityX2;  
   
+            if (mState == State.FLYING) {
+				mIsShrinking = (mPosition == TOP || mPosition == LEFT) ^ (mVelocity > 0);
+			}
+            
             if (Math.abs(mVelocity) > 50)  
             {  
                 if (mVelocity > 0)  

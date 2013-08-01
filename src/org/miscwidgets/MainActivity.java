@@ -16,13 +16,12 @@ public class MainActivity extends Activity implements OnPanelListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.panel_main);
+        setContentView(R.layout.push_panel);
 
         Panel panel;
         
         topPanel = panel = (Panel) findViewById(R.id.topPanel);
         panel.setOnPanelListener(this);
-//        panel.setInterpolator(new BounceInterpolator(Type.OUT));
         panel.setOpen(true, true);
         
     }

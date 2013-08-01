@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     android:background="#767c9b" >
 
-    <org.miscwidgets.widget.Panel
+    <com.wefound.epaper.widget.Panel
         android:id="@+id/topPanel"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -49,6 +49,6 @@
                 android:textSize="16dip"
                 android:textStyle="bold" />
         </LinearLayout>
-    </org.miscwidgets.widget.Panel>
+    </com.wefound.epaper.widget.Panel>
 
 </LinearLayout>
